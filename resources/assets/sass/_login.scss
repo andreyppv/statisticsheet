@@ -1,0 +1,428 @@
+.guest-page {
+    /*------------- LOGIN  ------------------*/
+    .container {
+        width: 1030px;
+    }
+
+    .rw-wrapper {
+        width: 100%;
+        position: relative;
+        margin: -5px auto 75px -10px;
+    }
+
+    .rw-sentence {
+        margin: 0;
+        text-align: left;
+        text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+    }
+
+    .rw-sentence span {
+        color: #444;
+        font-weight: 700;
+        font-size: 39px;
+    }
+
+    .rw-words {
+        display: inline;
+        text-indent: 10px;
+    }
+
+    .rw-words-1 span {
+        position: absolute;
+        opacity: 0;
+        overflow: hidden;
+        color: #5cb85c;
+        -webkit-animation: rotateWord 15s linear infinite 0s;
+        -ms-animation: rotateWord 15s linear infinite 0s;
+        animation: rotateWord 15s linear infinite 0s;
+    }
+
+    .rw-words-1 span:nth-child(2) {
+        -webkit-animation-delay: 3s;
+        -ms-animation-delay: 3s;
+        animation-delay: 3s;
+        color: #5cb85c;
+    }
+
+    .rw-words-1 span:nth-child(3) {
+        -webkit-animation-delay: 6s;
+        -ms-animation-delay: 6s;
+        animation-delay: 6s;
+        color: #5cb85c;
+    }
+
+    .rw-words-1 span:nth-child(4) {
+        -webkit-animation-delay: 9s;
+        -ms-animation-delay: 9s;
+        animation-delay: 9s;
+        color: #5cb85c;
+    }
+
+    .rw-words-1 span:nth-child(5) {
+        -webkit-animation-delay: 12s;
+        -ms-animation-delay: 12s;
+        animation-delay: 12s;
+        color: #5cb85c;
+    }
+
+    /*.rw-words-1 span:nth-child(6) {
+        -webkit-animation-delay: 15s;
+        -ms-animation-delay: 15s;
+        animation-delay: 15s;
+        color: #5cb85c;
+    }*/
+
+    @keyframes rotateWord {
+        0% {
+            opacity: 0;
+        }
+        2% {
+            opacity: 0;
+            -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+        }
+        5% {
+            opacity: 1;
+            -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+        }
+        17% {
+            opacity: 1;
+            -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+        }
+        20% {
+            opacity: 0;
+            -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+        }
+        80% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .rw-sentence {
+            font-size: 18px;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        .rw-sentence {
+            font-size: 9px;
+        }
+    }
+
+    .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+        border-color: #e7e7e7;
+        padding-bottom: 0px;
+    }
+
+    #form-login .form-group {
+        margin-top: 17px;
+    }
+
+    #form-login input.form-control {
+        padding-right: 0px;
+    }
+
+    #form-login small.help-block,
+    #form-sign-up small.help-block,
+    #form-login-mobile small.help-block{
+        display: none !important
+    }
+
+    footer {
+        padding: 150px 0 35px 0;
+    }
+
+    .navmenu-fixed-right,
+    .navbar-offcanvas {
+        left: auto;
+        right: 0px !important;
+        border-width: 0 0 0 1px;
+    }
+
+    #form-login-mobile input {
+        height: 41px;
+    }
+
+    #form-login-mobile .btn {
+        padding: 9px 15px;
+    }
+
+    .forgot-account {
+        float: left;
+        margin: 2px 0 10px 0;
+        cursor: pointer
+    }
+
+    .checklist {
+        margin: 25px 0 0 0
+    }
+
+    .checklist-item {
+        float: left;
+        width: 100%;
+        margin: 8px 0 8px 0
+    }
+
+    .checklist-item button {
+        float: left;
+        margin: 5px 0 5px 0
+    }
+
+    .checklist-item p {
+        float: left;
+        font-size: 19px;
+        margin: 8px 0 0 15px;
+        color: #000;
+        font-weight: 700
+    }
+
+    #form-login .form-group {
+        margin-right: 5px
+    }
+
+    .form-control-feedback {
+        top: 9px;
+    }
+
+    #form-sign-up .form-control-feedback ,  #form-login-mobile .form-control-feedback {
+        top: 13px;
+    }
+
+    .has-feedback label~.form-control-feedback {
+        right: 8px;
+    }
+
+    .help-block {
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+    #form-sign-up input {
+        height: 40px
+    }
+
+    #form-sign-up button {
+        padding: 9px 45px;
+    }
+
+    #form-sign-up .btn-social {
+        padding: 10px 30px;
+    }
+
+    .btn-social>:first-child {
+        top: 4px !important;
+    }
+
+    .btn-social>:nth-child(2) {
+        left: 7px;
+        position: relative;
+    }
+
+    span.sepButton {
+        position: relative;
+        top: 9px;
+        left: 15px
+    }
+
+    #login-page h1 {
+        color: #000
+    }
+
+    #login-page h1 span {
+        font-weight: 700
+    }
+
+    #login-page h1.sign-up-title {
+        font-size: 65px;
+        margin-bottom: 0px
+    }
+
+    p.sign-up-subtle {
+        font-size: 18px;
+        color: #989898;
+        margin-bottom: 20px;
+        font-weight: 500
+    }
+    /*------------- LOGIN ------------------*/
+
+    #form-sign-up input::-webkit-input-placeholder,
+    #form-login-mobile input::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: #000;
+        font-size: 15px;
+        font-weight: 700
+    }
+
+    #form-login input::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: #000;
+        font-size: 13px;
+        font-weight: 700
+    }
+
+    #form-sign-up input::-moz-placeholder,
+    #form-login-mobile input::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #000;
+        font-size: 15px;
+        font-weight: 700
+    }
+
+    #form-login input::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #000;
+        font-size: 15px;
+        font-weight: 700
+    }
+
+    #form-sign-up input:-ms-input-placeholder,
+    #form-login-mobile input:-ms-input-placeholder {
+        /* IE 10+ */
+        color: #000;
+        font-size: 15px;
+        font-weight: 700
+    }
+
+    #form-login input:-ms-input-placeholder {
+        /* IE 10+ */
+        color: #000;
+        font-size: 15px;
+        font-weight: 700
+    }
+
+    #form-sign-up input:-moz-placeholder,
+    #form-login-mobile input:-moz-placeholder {
+        /* Firefox 18- */
+        color: #000;
+        font-size: 15px;
+        font-weight: 700
+    }
+
+    #form-login input:-moz-placeholder {
+        /* Firefox 18- */
+        color: #000;
+        font-size: 15px;
+        font-weight: 700
+    }
+
+    @media only screen and (max-width:1350px) {}
+    /* START 1200 PX BREAKPOINT*/
+
+    @media (max-width:1200px) {}
+
+    @media (max-width:992px) {}
+
+    @media (max-width:768px) {
+        span.sepButton {
+            position: relative;
+            text-align: center;
+            width: 100%;
+            display: block;
+            top: 5px;
+            left: inherit;
+            clear: both;
+        }
+        .btn-social > :nth-child(2) {
+            left: 19px;
+        }
+        .nav > li button {
+            margin-left: 15px
+        }
+        .footer-div img {
+            max-width: 100%;
+            margin: 25px auto;
+            display: block;
+        }
+        .links-footer {
+            text-align: center !important;
+            float: none !important
+        }
+        .navbar-header {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .08);
+        }
+        .navbar-collapse {
+            background: #fff !important
+        }
+        .navbar-default .navbar-toggle {
+            border: none
+        }
+        .navbar-default .navbar-collapse {
+            background: #fff !important
+        }
+        .navbar-default .navbar-nav > .open > a {
+            color: #526069 !important;
+        }
+        .navbar-default .navbar-collapse,
+        .navbar-default .navbar-form {
+            border-color: #e4eaec;
+        }
+        .navbar-collapse {
+            border-bottom: 1px solid #000;
+        }
+        .navbar-mega .mega-content {
+            padding: 2px 0px 2px 30px;
+        }
+    }
+    @media (max-width: 768px) {
+        .navbar-brand {
+            padding: 15px 20px;
+            font-weight: 500;
+        }
+        #form-login-mobile button {
+            margin-top: 30px
+        }
+        .left-login h1 {
+            font-size: 24px;
+            margin-top: 0px
+        }
+        .checklist {
+            margin: 5px 0 0 0;
+        }
+        .checklist-item p {
+            font-size: 14px;
+            margin: 13px 0 0 8px;
+        }
+        .checklist-item {
+            margin: 2px 0 2px 0;
+        }
+        #login-page h1.sign-up-title {
+            font-weight: 700;
+            text-align: center;
+            font-size: 26px;
+        }
+        p.sign-up-subtle {
+            font-size: 16px;
+            text-align: center
+        }
+        #form-sign-up button,
+        #form-login-mobile button,
+        #form-sign-up .btn-social {
+            display: block;
+            width: 100%;
+        }
+        #form-sign-up .btn-social {
+            margin: 15px 0 0 0
+        }
+        #form-sign-up .form-group,
+        #form-login-mobile .form-group {
+            margin-bottom: 7px;
+        }
+        footer {
+            padding: 50px 0 35px 0 !important;
+        }
+        .modal-dialog {
+            padding: 0 15px 0 15px;
+        }
+        .inner-modal-wrapper {
+            padding: 5px 5px;
+        }
+    }
+}
